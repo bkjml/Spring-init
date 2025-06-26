@@ -1,0 +1,13 @@
+server.port: 7003
+server.error.include-message: always
+
+logging:
+  level:
+    root: INFO
+    se.mathias: DEBUG
+
+---
+spring.config.activate.on-profile: docker
+server:
+  address: 0.0.0.0
+  port: 8080
